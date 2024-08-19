@@ -1,0 +1,49 @@
+# Existing version catalog entries
+[versions]
+agp = "8.5.0-alpha08"
+firebaseBom = "33.1.2"
+kotlin = "1.9.0"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+mlkitFaceDetection = "17.0.2"
+firebaseFirestore = "24.3.0"
+cameraxVersion = "1.2.0"
+zxingAndroidEmbedded = "4.3.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# ML Kit Face Detection
+mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", version = "16.1.7" }
+
+# Firebase Firestore
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+
+
+# CameraX Libraries
+camerax-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraxVersion" }
+camerax-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraxVersion" }
+camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraxVersion" }
+camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraxVersion" }
+
+# QR Code Generator
+zxing-android-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
